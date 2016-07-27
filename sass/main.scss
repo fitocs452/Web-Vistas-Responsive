@@ -1,0 +1,134 @@
+$custom-height: 75px;
+$static-height: 150px;
+
+$color-red: red;
+$color-green: green;
+$color-yellow: yellow;
+$color-orange: orange;
+$color-blue: blue;
+$color-black: black;
+$color-brown: brown;
+
+.block {
+    height: $static-height;
+    margin-bottom: 10px;
+
+    &.block-red {
+        background-color: $color-red;
+    }
+
+    &.block-green {
+        background-color: $color-green;
+    }
+
+    &.block-yellow {
+        background-color: $color-yellow;
+    }
+
+    &.block-orange {
+        background-color: $color-orange;
+    }
+
+    &.block-blue {
+        background-color: $color-blue;
+    }
+
+    &.block-black {
+        background-color: $color-black;
+    }
+
+    &.block-brown {
+        background-color: $color-brown;
+    }
+
+    &.block-text-button {
+        position: relative;
+        height: $custom-height;
+
+        input[type="text"] {
+            background-color: lightblue;
+            box-sizing: border-box;
+            display: block;
+            height: $custom-height;
+            width: 100%
+        }
+
+        input[type="button"] {
+            background-color: grey;
+            height: $custom-height;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 150px;
+        }
+    }
+}
+
+/* Para tablets */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+   .second-container {
+        position: relative;
+    }
+
+   .block-orange {
+        box-sizing: border-box;
+        display: block;
+        margin-right: 10px;
+        padding-right: 5px;
+        width: 49%;
+   }
+
+   .block-blue {
+        margin-left: 10px;
+        padding-left: 5px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 49%;
+   }
+}
+
+/* Para computadora */
+@media screen and (min-width: 768px) {
+    .first-container, .second-container {
+        position: relative;
+    }
+
+    .block-two {
+        box-sizing: border-box;
+        display: block;
+        padding-right: 5px;
+        width: 49%;
+    }
+
+    .block-three {
+        margin-left: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 49%;
+    }
+
+    .block-orange {
+        box-sizing: border-box;
+        display: block;
+        padding-left: 5px;
+        width: 33%; 
+    }
+
+    .block-blue {
+        position: absolute;
+        right: 34%;
+        top: 0px;
+        width: 32%;
+    }
+
+    .block-black {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 33%;
+    }
+}

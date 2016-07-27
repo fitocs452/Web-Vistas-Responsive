@@ -1,0 +1,84 @@
+.block {
+  height: 150px;
+  margin-bottom: 10px; }
+  .block.block-red {
+    background-color: red; }
+  .block.block-green {
+    background-color: green; }
+  .block.block-yellow {
+    background-color: yellow; }
+  .block.block-orange {
+    background-color: orange; }
+  .block.block-blue {
+    background-color: blue; }
+  .block.block-black {
+    background-color: black; }
+  .block.block-brown {
+    background-color: brown; }
+  .block.block-text-button {
+    position: relative;
+    height: 75px; }
+    .block.block-text-button input[type="text"] {
+      background-color: lightblue;
+      box-sizing: border-box;
+      display: block;
+      height: 75px;
+      width: 100%; }
+    .block.block-text-button input[type="button"] {
+      background-color: grey;
+      height: 75px;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 150px; }
+
+/* Para tablets */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .second-container {
+    position: relative; }
+  .block-orange {
+    box-sizing: border-box;
+    display: block;
+    margin-right: 10px;
+    padding-right: 5px;
+    width: 49%; }
+  .block-blue {
+    margin-left: 10px;
+    padding-left: 5px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 49%; } }
+
+/* Para computadora */
+@media screen and (min-width: 768px) {
+  .first-container, .second-container {
+    position: relative; }
+  .block-two {
+    box-sizing: border-box;
+    display: block;
+    padding-right: 5px;
+    width: 49%; }
+  .block-three {
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 49%; }
+  .block-orange {
+    box-sizing: border-box;
+    display: block;
+    padding-left: 5px;
+    width: 33%; }
+  .block-blue {
+    position: absolute;
+    right: 34%;
+    top: 0px;
+    width: 32%; }
+  .block-black {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 33%; } }
